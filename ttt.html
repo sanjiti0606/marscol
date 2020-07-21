@@ -1,0 +1,67 @@
+<html>
+  <title>tic tac toe</title>
+  <head>
+    <link rel="stylesheet" href="tictactoe.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <h1><center>TIC-TAC-TOE</h1>
+      <p><center>Mars crew Etertainment System</center></p>
+  </head>
+  <body>
+  <table>
+    <tr>
+      <td class="cell" id="0"></td>
+      <td class="cell" id="1"></td>
+      <td class="cell" id="2"></td>
+    </tr>
+    <tr>
+      <td class="cell" id="3"></td>
+      <td class="cell" id="4"></td>
+      <td class="cell" id="5"></td>
+    </tr>
+    <tr>
+      <td class="cell" id="6"></td>
+      <td class="cell" id="7"></td>
+      <td class="cell" id="8"></td>
+    </tr>
+  </table>
+  <div class="endgame">
+    <div class="text"></div>
+    <button onClick="startGame()">Replay</button>
+  </div>
+  
+  <div class="btn-group">
+    <button class="btn" onClick="setLevel(1)">LEVEL 1</button>
+    <button class="btn" onClick="setLevel(2)">LEVEL-2</button>
+    <button class="btn" onClick="setLevel(3)">LEVEL-3</button>
+  </div>
+  
+    <button class="again" onClick="startGame()">Play Again</button>
+  <table class="score-table">
+      <tr>
+        <th>Player</th>
+        <th>Score</th>
+      </tr>
+      <tr>
+        <td>You</td>
+        <td class="score" id="0">0</td>
+      </tr>
+      <tr>
+        <td>Machine</td>
+        <td class="score" id="1">0</td>
+      </tr>
+    </table>
+    <button class="reset" onClick="resetScore()">Reset Score</button>
+    
+    <label class="container">O
+    <input type="radio" id="r1" checked="checked" name="radio">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">X
+    <input type="radio" id="r2" name="radio">
+    <span class="checkmark"></span>
+  </label>
+    
+    <button class="help" onClick="hint()">HELP<br>(ONLY LEVEL3)</button>
+    </body>
+    <script src="tictac.js"></script>  
+  </html>
