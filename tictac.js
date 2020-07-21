@@ -49,6 +49,13 @@ function setLevel(lvl){
   console.log("SELECT A LEVEL");
   }
   window.localStorage.setItem("level", diff);
+	document.getElementById("btn1").style.backgroundColor = "#4CAF50";
+document.getElementById("btn2").style.backgroundColor = "#4CAF50";
+document.getElementById("btn3").style.backgroundColor = "#4CAF50";
+if(diff == 1)document.getElementById("btn1").style.backgroundColor = "grey";
+else if(diff == 2)document.getElementById("btn2").style.backgroundColor = "grey";
+else if(diff == 3)document.getElementById("btn3").style.backgroundColor = "grey";
+
   //document.getElementsByClick("btn").style.removeProperty('background-color');
 }
 function resetScore(){
